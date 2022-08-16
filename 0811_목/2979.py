@@ -19,21 +19,24 @@ table = []
 for _ in range(3):
     n = list(map(int, input().split()))
     table.append(n)
-    max_ = max(table[0][1], table[1][1], table[2][1]) # 떠난 시간 3개를 맥스 함수로 비교해 가장 마지막으로 떠난 트럭의 시간을 구함
-    parking = [0]*(max_-1)
+    
 
-    for i in table:
-        for j in range(i[0] - 1, i[1] - 1):
-            parking[j] += 1
+# print(table)
+m = max(table[0][1], table[1][1], table[2][1]) # 떠난 시간 3개를 맥스 함수로 비교해 가장 마지막으로 떠난 트럭의 시간을 구함
+parking = [0]*(m-1)
 
-        fee = 0
-        for car in parking:
-            if car == 1:
-                fee += a
-            elif car == 2:
-                fee += 2 * b
-            elif car == 3:
-                fee += 3 * c
+for i in table:
+    for j in range(i[0]-1, i[1]-1):
+        parking[j] += 1
+
+    fee = 0
+    for car in parking:
+        if car == 1:
+            fee += a
+        elif car == 2:
+            fee += 2 * b
+        elif car == 3:
+            fee += 3 * c
     
 
 print(fee)
