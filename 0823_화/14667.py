@@ -2,7 +2,8 @@
 import sys
 sys.stdin = open("14467_input.txt")
 
-cow = [[-1]*10, [0]*10]
+cow = [[-1]*10, [0]*10] # 이차원배열
+print(cow)
 
 t = int(input())
 

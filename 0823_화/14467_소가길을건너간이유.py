@@ -6,8 +6,8 @@
 
 # 다음 관측된 위치가 기존 관측된 위치와 다를 경우 이동횟수 +1 을 해준다.
 
-import sys
-sys.stdin = open("14467_input.txt")
+# import sys
+# sys.stdin = open("14467_input.txt")
 
 cow = [[-1]*10, [0]*10] # 각 소들의 숫자와 위치를 이차원배열 생성
 # 소들의 숫자는 -1과 0으로 초기화
