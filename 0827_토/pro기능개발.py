@@ -9,3 +9,9 @@
 pro = list(map(int, input().split()))
 spe = list(map(int, input().split()))
 
+answer = []
+time = 0
+count = 0
+
+while len(pro) > 0:
+    if (pro[])

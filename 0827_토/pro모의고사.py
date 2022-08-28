@@ -25,7 +25,7 @@ for i in range(len(answer)):
     s2 = i % 8
     s3 = i % 10
 # 비교하는 방법 몰라서 구글링..
-    if su1[s1] == answer[i]: #1
+    if su1[s1] == answer[i]: 
         c1 += 1 
     if su2[s2] == answer[i]:
         c2 += 1
