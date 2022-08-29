@@ -6,12 +6,31 @@
 
 # 각 배포마다 몇 개의 기능이 배포되는지? 
 
-pro = list(map(int, input().split()))
-spe = list(map(int, input().split()))
+# pro = list(map(int, input().split()))
+# spe = list(map(int, input().split()))
 
-answer = []
-time = 0
-count = 0
+pro = [93, 30, 55]
+spe = [1, 30, 5]
 
-while len(pro) > 0:
-    if (pro[])
+result = []    
+cnt = 0
+
+while pro: 
+    if pro[0] >= 100:
+        pro.pop(0)
+        spe.pop(0)
+        cnt += 1
+    else:
+        result.append(cnt)
+        cnt = 0
+        for i in range(len(pro)):
+            pro[i] += spe[i]
+result.append(cnt)
+qw = []
+for i in range(len(result)):
+    if result[i] != 0:
+        qw.append(result[i])
+print(qw)
+
+
+

@@ -26,20 +26,20 @@ for i in range(len(answer)):
     s3 = i % 10
 # 비교하는 방법 몰라서 구글링..
     if su1[s1] == answer[i]: 
-        c1 += 1 
+        c1 += 1 # 수포자1이 맞추면 체크
     if su2[s2] == answer[i]:
-        c2 += 1
+        c2 += 1 # 수포자2가 맞추면 체크
     if su3[s3] == answer[i]:
-        c3 += 1
+        c3 += 1 #수포자3이 맞추면 체크
     
-cnt = max(c1, c2, c3)
+cnt = max(c1, c2, c3) #체크 된 것 중 제일 큰 것
 result = []
-if cnt == c1: 
-    result.append(1)
-elif cnt == c2:
-    result.append(2)
-else:
-    result.append(3)
+if cnt == c1: # 제일 큰 것이 1이라면
+    result.append(1) #결과에 1추가
+if cnt == c2:
+    result.append(2) #결과에 2 추가
+if cnt == c3:
+    result.append(3) # 모든 조건문 탐색을 위해 다 if문으로 써줌
 
 print(result)
 
