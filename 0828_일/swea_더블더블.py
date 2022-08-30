@@ -7,4 +7,4 @@ n = int(input())
 
 for i in range(n):
     n = 2**i
-    print(n, end='')
+    print(n, end=' ')
