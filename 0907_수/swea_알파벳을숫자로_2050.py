@@ -4,9 +4,10 @@
 import sys
 sys.stdin = open("input.txt")
 
-n = input()
+n = input().split()
 
-for i in range(len(n)):
-    print(ord(n[i])-64, end=' ')
+# for i in range(len(n)):
+#     print(ord(n[i])-64, end=' ')
 
-# print(n, type(n))
+print(n, type(n))
+
