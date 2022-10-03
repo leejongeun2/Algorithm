@@ -16,7 +16,7 @@ if new_id in registered_list_set:
             temp = int(temp)
             temp += 1
             temp = str(temp)
-    else:
+    else: 
         temp = "1"
         if answer+temp in registered_list_set:
             while answer+temp in registered_list_set:
@@ -26,7 +26,7 @@ if new_id in registered_list_set:
     answer = answer+temp
 else:
     answer += new_id
-print(registered_list_set)
+print(answer)
 
 
 # 포함하지 않으면 출력 
