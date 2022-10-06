@@ -1,13 +1,13 @@
-# 1004 아침 풀 예정
+# 입력 된 영어단어가 중복되지 않게 최대 몇번 등장하는지?
 
-doc = input()
-word = input()
+doc = input() # 배열 
+word = input() # 입력 된 영어단어
 count = 0
-i = 0
-while i <= len(doc) - len(word):
-    if doc[i:i + len(word)] == word:
-        count += 1
-        i += len(word) # 단어의 길이만큼 인덱스를 더해주고
-    else:              # 찾지 못하면
+i = 0 # i가 7이면 반복문 못함, 왜냐면 최대 인덱스 6까지만 갈 수 있기 때문에 6까지 간 것이 최댓값임
+while i <= len(doc) - len(word): # 배열길이에서 입력 된 영단어 길이를 뺀것이 0보다 크거나 같다면 반복문 실행
+    if doc[i:i + len(word)] == word: # doc[0:3] => aba == aba, 단어는 연결되어있는 것이니까. 
+        count += 1 # 같으니까 1
+        i += len(word) # 단어의 길이만큼 인덱스를 더해주고, 2까지 탐색했으니 3부터, 중복되지 않아야하니까 
+    else:              # 같지 않다면
         i += 1         # 1만큼 인덱스를 더해줌
 print(count)
