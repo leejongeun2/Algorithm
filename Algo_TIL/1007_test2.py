@@ -5,31 +5,23 @@
 # 소스 : "abbabaa", 타겟: "bb", 제거순서 order=[7,1,2,5,4,3,6]간주, 굵게 표시 된 문자는 하위 시퀀스, -는 제거 된 문자
 # 제거 몇개까지 가능한지
 
-from ast import While
-
-
-order = [1, 4]
-source = "hkbdi"
-target = "kd"
-
-result = []
-for j in target:
-    result.append(j)
-
-
+source = 'hkbid'
+target = 'kd'
+order = [3,4]
 cnt = 0
 for i in order:
+    i -= 1
+    source = list(source)
+    source[i] = '_'
+    source = ''.join(source)
+    answer = ''
+    for i in source:
+        if i != '_':
+            answer += i
+    if answer.count(target) > 0:
+        cnt += 1
     
-    remove = list(source.replace(source[i-1], " ")) # 저장시키려면..
-    source = ''.join(remove)
-    ah = 0
-    cnt += 1
-    for k in result:
-        if k in remove :
-            ah += 1
-    if ah < 2:
-        break
-print(cnt-1)
+print(cnt)
 
             
 
