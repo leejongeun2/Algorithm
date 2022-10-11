@@ -31,7 +31,7 @@ count = 0  # 컴포넌트 그래프 개수 저장
 # 1~N번 노드를 각각돌면서
 for i in range(1, N + 1):
     if not visited[i]:  # 만약 방문하지 않았다면
-        if not graph[i]:  # 만약 그래프가 비어있다면
+        if not graph[i]:  # 만약 그래프가 ';ㅣ비어있다면
             count += 1  # 개수 1개 추가
             visited[i] = True  # 방문 처리
         else:  # 만약 그래프가 비어있지 않다면(어느 점과 연결된 점이 있다면)
