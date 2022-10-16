@@ -27,7 +27,7 @@ def bfs(graph, a, b):
 
 for i in range(t):
     cnt = 0
-    n, m, k = map(int,input().split()) # 10, 8, 17
+    n, m, k = map(int,input().split()) #
     graph = [[0]*m for _ in range(n)] # 가로길이 겉 리스트, 세로 길이 속 리스트 생성 
 
     for j in range(k):
