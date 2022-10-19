@@ -22,6 +22,7 @@ for i in source_lis: # b, d, a
 no_set_lis = list(set(lis))
 print(no_set_lis)
 print(answer)
+# 출력값 'abdabb'
 
 
     
