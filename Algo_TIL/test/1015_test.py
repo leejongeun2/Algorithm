@@ -5,24 +5,21 @@ source = 'bbaabd'
 source_lis = list(set(source))
 
 
-# while len(source) > 0:
-
-# while len(source_lis)>0: # 소스에 문자열이 있을 때
-#     # for i in range(source):
-#     #  if source.count(i)>1:
-#     #     dest.append(i)
-lis = []
-for i in source_lis: # b, d, a 
-    answer = ''
-    if source.count(i) > 1 :
-        lis.append(i)
-        
-    elif source.count(i) == 1:
-        answer += i
-no_set_lis = list(set(lis))
-print(no_set_lis)
+source = 'bbaabd'
+source = list(source)
+answer = ''
+while source:
+    temp = []
+    resource = []
+    for i in source:
+        if i not in temp:
+            temp.append(i)
+        else:
+            resource.append(i)
+    temp.sort()
+    answer += ''.join(temp)
+    source = resource
 print(answer)
-# 출력값 'abdabb'
 
 
     
