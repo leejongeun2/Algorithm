@@ -4,3 +4,8 @@
 
 a, b, c = map(int, input().split())
 
+d = 1
+while d%a!=0 or d%b!=0 or d%c!=0 : # a, b, c중 나머지가 0이 아닐 동안 반복, 0이면 날짜 추가 불가 
+  d += 1
+
+print(d)
