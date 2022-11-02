@@ -9,3 +9,13 @@ while d%a!=0 or d%b!=0 or d%c!=0 : # a, b, c중 나머지가 0이 아닐 동안 
   d += 1
 
 print(d)
+
+a,b,c=map(int,input().split())
+
+i=0
+while True:
+    i = i + 1
+
+    if i % a == 0 and i % b == 0 and i % c == 0:
+        print(i)
+        break
