@@ -3,8 +3,8 @@
 # anonymize_text('John is old') == 'XXXX is old'
 # anonymize_text('Mark Oldham ate an apple') == 'XXXXXXXXXXX ate an apple'
 
-import spacy
+# import spacy
 
-nlp = spacy.load("en_core_web_sm")
+# nlp = spacy.load("en_core_web_sm")
 
-print(nlp)
+# print(nlp)
