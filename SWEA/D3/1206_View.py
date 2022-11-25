@@ -18,7 +18,7 @@ for order in range(1, 10 + 1): # 테스트 케이스
             if i == j:  # 만약 인덱스가 본인이라면(비교할 대상이 자기자신) 밑에 조건을 실행할 필요가 없으므로 continue
                 continue
             result = gangnam[i] - gangnam[j]  # 우선 조망권을 받을 수 있는 층수를 계산하여(0자리 높이와 3자리 높이 차)
-            if result < 0:  # 그 값이 음수라면 양옆 각 두개의 건물 중 조망권이 확보된 집이 없으므로
+            if result <= 0:  # 그 값이 음수라면 양옆 각 두개의 건물 중 조망권이 확보된 집이 없으므로
                 max_result = []  # 리스트를 다시 비워주고
                 break  # 반복문 탈출
             max_result.append(result)  # 조망권 값들을 리스트에 추가해준다.

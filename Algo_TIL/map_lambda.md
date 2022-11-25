@@ -8,7 +8,9 @@
 - map(str, n)
   - n값을 문자 적용하는 것
   - 주의: list(str(n))하는 경우, 리스트의 괄호까지 모두 문자열로 리스트화 됨, 따라서 map을 사용하여 n의 요소만 문자열로 바꿔줌
-
+* `n, m, k = map(int, input().split())` 띄어쓰기 기준으로 각 입력값을 숫자로 변경
+* `data = list(map(int, input().split()))` # data처럼 하나의 변수로 배열을 입력 받을 때는 리스트화시켜줘야함(리스트를 안할 경우, 출력값이 객체로 표시됨)
+* `plan = input().split()` 띄어쓰기 기준으로 문자를 입력 받을 때
 * 참조: https://dojang.io/mod/page/view.php?id=2286
 
 ### lambda 사용법
