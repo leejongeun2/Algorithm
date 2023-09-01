@@ -1,7 +1,7 @@
 package 정처기.java;
 
 class Gogaek{
-String irum;
+String irum; // 멤버 변수 선언
 int nai;
 long bunho;
 static long GoBunho=0;
